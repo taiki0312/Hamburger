@@ -1,0 +1,267 @@
+<!--宣言文-->
+<!DOCTYPE html> 
+<html lang="en">
+
+<!--head：裏方-->
+<head>
+  <!--文字化けを防ぐ-->
+  <meta charset="UTF-8">
+  <!--横幅をあらゆるデバイスに合わせる-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TheGodburger</title>
+  <!--htmlとcssのリンク付け-->
+  <link rel="stylesheet" href="./../static/css/style.css">
+  <link rel="stylesheet" href="./../static/css/style2.css"> 
+  <!-- JavaScriptファイルをHTMLに読み込む　scr:パス指定 -->
+  <script language="javascript" type="text/javascript" src="./../static/hamburger.js"></script>
+</head>
+
+
+<!--body：表方-->
+<body class="body">
+  <!-- ヘッダー作成 -->
+  <header class="header">
+    <h1 class="shopName">The Godburger</h1>
+    <!-- navタグ作成：ページ内の指定部分や他のページへの移動 -->
+    <nav class="headerNavigationUl">
+      <ul>
+        <!-- a:リンクの名前，href:リンク先， -->
+        <li class="headerNavigationLi"><a href="#hamburger">Hamburger</a></li>
+        <li class="headerNavigationLi"><a href="#topping" >Topping</a></li>
+        <li class="headerNavigationLi"><a href="#drinkMenu" >Drink</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+      <!-- ロゴ写真 -->
+      <div class="image">
+        <img class="image" src="./../static/images/logo.jpg" alt="ロゴ">
+      </div>
+      <!-- 説明 -->
+      <div class="shopDetail">
+        <p>全てのハンバーガーにフレンチフライ付き<p>
+        <p>店内飲食とテイクアウトで同一の税込表示価格表示<p>
+      </div>
+      <!-- バーガー -->
+      <div class="hamburger" id="hamburger">
+        <!-- ハンバーガー見出し -->
+        <h1 class="titleFont1">&lt;Hamburger&gt;</h1>
+        <!-- バーガーメニュー -->
+        <div class="menu">
+          <div class="foodMenu" id="foodMenu1">
+            <div class="foodName" onclick="showDetail('ハンバーガー')">
+              <p>ハンバーガー</p>
+              <p class="foodPrice">1400円</p>
+            </div>
+            
+            <div class="foodName" onclick="showDetail('チーズバーガー')">
+              <p>チーズバーガー</p>
+              <p class="foodPrice">1550円</p>
+            </div>
+
+            <div class="foodName" onclick="showDetail('ベーコンチーズバーガー')">
+              <p>ベーコンチーズバーガー</p>
+              <p class="foodPrice">1800円</p>
+            </div>
+
+            <div class="foodName" onclick="showDetail('アボカドチーズバーガー')">
+              <p>アボカドチーズバーガー</p>
+              <p class="foodPrice">1750円</p>
+            </div>
+
+            <div class="foodName" onclick="showDetail('アボカドベーコンチーズバーガー')">
+              <p>アボカドベーコンチーズバーガー</p>
+              <p class="foodPrice">2000円</p>
+            </div>
+
+            <div class="foodName" onclick="showDetail('アボカドフライドエッグバーガー')">
+              <p>アドカドフライドエッグバーガー</p>
+              <p class="foodPrice">1700円</p>
+            </div>
+
+            <div class="foodName" onclick="showDetail('チーズフライドエッグバーガー')">
+              <p>チーズフライドエッグバーガー</p>
+              <p class="foodPrice">1650円</p>
+            </div>
+
+            <div class="foodName" onclick="showDetail('ダブルパティチーズバーガー')">
+              <p>ダブルパティチーズバーガー</p>
+              <p class="foodPrice">2250円</p>
+            </div>
+        </div>
+
+        <div class="foodMenu" id="foodMenu2">
+            <div class="foodName" onclick="showDetail('B.B.Q.バーガー')">
+              <p>B.B.Q.バーガー</p>
+              <p class="foodPrice">1500円</p>
+            </div>
+
+            <div class="foodName" onclick="showDetail('B.B.Q.アボカドバーガー')">
+              <p>B.B.Q.アボカドバーガー</p>
+              <p class="foodPrice">1700円</p>
+            </div>
+
+            <div class="foodName" onclick="showDetail('B.B.Q.アボカドエッグバーガー')">
+              <p>B.B.Q.アボカドエッグバーガー</p>
+              <p class="foodPrice">1800円</p>
+            </div>
+
+            <div class="foodName" onclick="showDetail('メキシカンバーガー')">
+              <p>メキシカンバーガー</p>
+              <p class="foodPrice">1750円</p>
+            </div>
+
+            <div class="foodName" onclick="showDetail('チリビーンズチーズバーガー')">
+              <p>チリビーンズチーズバーガー</p>
+              <p class="foodPrice">1750円</p>
+            </div>
+
+            <div class="foodName" onclick="showDetail('スマッシュバーガー')">
+              <p>スマッシュバーガー</p>
+              <p class="foodPrice">1750円</p>
+            </div>
+
+            <div class="foodName" onclick="showDetail('ゴルゴンゾーラバーガー')">
+              <p>ゴルゴンゾーラバーガー</p>
+              <p class="foodPrice">1650円</p>
+            </div>
+
+            <div class="foodName" onclick="showDetail('ベジタブルバーガー')">
+              <p>ベジタブルバーガー</a>
+              <p class="foodPrice">1300円</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--トッピング-->
+      <div class="toppingBox" id="topping">
+        <h1 class="titleFont1"> &lt;Topping&gt;</h1>
+        <div class="toppingDetail">
+          <div class="toppingName text10">
+            <p>アボカド</p>
+            <p>B.B.Qソース</p>
+            <p>ベーコン</p>
+            <p>チーズ</p>
+            <p>フライドエッグ</p>
+            <p>ゴルゴンゾーラ</p>
+            <p>パティ</p>
+          </div>
+
+          <div class="toppingPrice text10">
+            <p>200円</p>
+            <p>100円</p>
+            <p>250円</p>
+            <p>150円</p>
+            <p>100円</p>
+            <p>250円</p>
+            <p>700円</p>
+          </div>
+        </div>
+      </div>
+
+      <!--ドリンク-->
+      <div class="drinkMenu" id="drinkMenu">
+        <!-- ドリンク見出し -->
+        <h1 class="titleFont1">&lt;Drink&gt;</h1>
+        <h2>~Beer~</h2>
+        <div class="drinkDetail">
+          <!-- アルコール -->
+          <div class="drinkname text10">
+            <p>INEDIT  /  スペイン</p>
+            <p>Heineken  /  オランダ</p>
+            <p>BREWDOG Punk IPA/スコットランド</p>
+            <p>NEWTON  /  ベルギー</p>
+            <p>キリンハートランド  /  日本</p>
+            <p>MINOH Pale Ale  /  大阪</p>
+            <p>MINOH Osaru IPA  /  大阪</p>
+            <p>ノンアルコールビール  /  日本</p>
+          </div>
+          <!-- アルコール値段 -->
+          <div class="drinkprice text10">
+            <p>700円</p>
+            <p>600円</p>
+            <p>700円</p>
+            <p>700円</P>
+            <p>650円</p>
+            <p>800円</p>
+            <p>800円</p>
+            <p>500円</P>
+          </div>
+        </div>
+      </div>
+      <div class="drinkMenu" id="drinkMenu2">
+          <h2>~Juice~</h2>
+          <div class="drinkDetail">
+            <!-- ソフトドリンク -->
+            <div class="drinkname text10">
+              <p>スパークリングウォーター(330ml)</p>
+              <p>ミネラルウォーター(330ml)</p>
+              <p>グレープタイザー</p>
+              <p>アップルタイザー</p>
+              <p>コカ・コーラ</p>
+              <p>ジンジャーエール</p>
+              <p style="height: 50px;">Yoga <br>(アプリコット / ピーチ / ペア)</p> 
+              <p>アールグレイ (ホット)</p>
+              <p>アールグレイ (アイス)</p>
+              <p>アメリカ－ノ (ホット)</p>
+              <p>アメリカ－ノ (アイス)</p>
+              <p>エスプレッソ</p>
+            </div>
+            <!-- ソフトドリンク値段 -->
+            <div class="drinkprice text10">
+              <p>400円</P>
+              <p>400円</P>
+              <p>450円</P>  
+              <p>450円</P>
+              <p>350円</P>
+              <p>350円</P>
+              <p style="height: 50px;">450円</P>
+              <p>400円</P>
+              <p>450円</P>
+              <p>400円</P> 
+              <p>450円</P>
+              <p>400円</P>     
+            </div>
+          </div>
+      </div>
+      <!-- 店舗情報 -->
+      <div class="adress" id="adress">
+        <p>&#12306 920-0961<p>
+        <p>金沢市香林坊2-12-10 1-A</p>
+        <p>phone 076-205-2925</p>
+      </div>
+      <!-- 言語選択 -->
+      <div class="selectLanguage buttonBox">
+        <p type="button" class="button" onclick="moveToOtherPage('indexJap')">日本語</p>
+        <p type="button" class="button" onclick="moveToOtherPage('indexEng')">英語</p>
+      </div>
+
+      <!-- ハンバーガー詳細 -->
+      <div id="hamburgerDetail">
+        <div id="hamburgerDetailBox">
+          <div class="hamburgerDetailName">
+            <h3 id="detailName"></h3>
+          </div>
+          <div id="hamburgerDetailImage">
+          </div>
+          <div class="hamburgerDetailText">
+            <p id="detailText"></p>
+          </div>
+          <div class="hamburgerDetailPrice">
+            <p id="detailPrice">
+          </div>
+          <!-- 戻るボタン -->
+          <div class="buttonBox">
+            <p class="button" onclick="hideDetail()">戻る</p>
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+  <script src="hamburger.js"></script>
+</body>
+</html>

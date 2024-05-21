@@ -1,0 +1,34 @@
+<!--宣言文-->
+<!DOCTYPE html> 
+<html lang="en">
+
+<!--head：裏方-->
+<head>
+    <!--文字化けを防ぐ-->
+    <meta charset="UTF-8">
+    <!--横幅をあらゆるデバイスに合わせる-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheGodburger</title>
+    <!--htmlとcssのリンク付け-->
+    <link rel="stylesheet" href="./../static/css/style.css">
+    <link rel="stylesheet" href="./../static/css/selectLanguage.css">
+    <script language="javascript" type="text/javascript" src="./../static/hamburger.js"></script>
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+
+<body class="body">
+
+  <main>
+    <div class="image">
+      <img class="image" src="./../static/images/logo.jpg" alt="ロゴ">
+    </div >
+    <div class="selectBox">
+      <h2 onclick="moveToOtherPage('indexJap')">日本語 / Japanese</h2>
+      <h2 onclick="moveToOtherPage('indexEng')">英語 / English </h2>
+    </div>
+  </main>
+
+</body>

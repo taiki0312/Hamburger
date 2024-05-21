@@ -1,0 +1,232 @@
+@media screen and (min-width:560px) {
+
+html {
+    scroll-behavior: smooth;
+}
+/* 余白をなくす(リセットcss) */
+*{
+    padding:0;
+    margin:0;
+    overflow-x: hidden;
+}
+
+/* 共通部分 */
+body{
+    font-family:'メイリオ', 'Meiryo', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.titleFont1 {
+    font-size: 30px;
+    text-align: center;
+}
+.text10 p {
+    height:40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ヘッダー */
+.header {
+    margin: auto;
+    text-align: center;
+}
+.shopName {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+.headerNavigationLi {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.headerNavigationLi a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* main */
+main {
+    width: 80%;
+    margin: auto;
+}
+.image {
+    margin: auto;
+    max-width: 100%;
+}
+.image img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: 50%;
+}
+.shopDetail p{
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Hamburger */
+.hamburger {
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+.menu
+{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    overflow-x: hidden;
+}
+.foodMenu
+{
+    width: 100%;
+    text-align: center;
+}
+.foodName {
+    height: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    background-color: white; 
+}
+
+.foodPrice{
+    text-decoration:underline;
+    text-decoration-color: rgb(0, 0, 0);
+}
+
+/* Topping */
+.toppingBox {
+    padding: 10px 30px 10px 30px;
+}
+.toppingBox h2{
+    text-align: center;
+}
+.toppingDetail{
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+.toppingName {
+    text-align: center; 
+    width: 50%; 
+}
+.toppingmiddle{
+    text-align: center; 
+    width: 50%
+}
+.toppingPrice{
+    text-align: center;
+    width: 50%;
+    text-decoration:underline;
+    text-decoration-color: rgb(0, 0, 0);
+}
+
+/* drink */
+.titleFont2 {
+    font-size: 30px;
+}
+.drinkMenu {
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+    font-size: 11px;
+    font-weight: bold;
+}
+.drinkDetail{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+.drinkname{
+    text-align: center;
+    width: 100%;
+}
+.drinkmiddle {
+    text-align: center;
+    width: 100%;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.drinkprice{
+    text-align: center;
+    width: 100%;
+    text-decoration:underline;
+    text-decoration-color: rgb(0, 0, 0);
+}
+
+.adress{
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 言語選択 */
+.selectLanguage {
+    text-align: center;
+}
+.selectLanguage a {
+    font-size: 20px;
+}
+
+/* ハンバーガー詳細 */
+#hamburgerDetail {
+    display: none;
+    text-align: center;
+    position: fixed;
+    width: 50%;
+    height: 40%;
+    background-color: #FFEDB3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+#hamburgerDetailBox {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.hamburgerDetailName{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    font-size: 20px;
+}
+.hamburgerDetailImage {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.detailImage {
+    text-align: center;
+    width: 50%;
+}
+.hamburgerDetailText p {
+    font-size: 20px;
+    font-weight: 50px
+}
+.backButton{
+    text-decoration-color: gray;
+    margin: auto;
+    bottom: 10px
+}
+#backButton{
+    width:20%;
+    background-color: #f7f6f5;
+    text-decoration-color: gray;
+    margin: auto;
+    margin-top: 10px;
+    bottom: 10px;
+    border-radius: 20px;
+}
+
+}

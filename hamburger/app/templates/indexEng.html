@@ -1,0 +1,259 @@
+<!--宣言文-->
+<!DOCTYPE html> 
+<html lang="en">
+
+<!--head：裏方-->
+<head>
+    <!--文字化けを防ぐ-->
+    <meta charset="UTF-8">
+    <!--横幅をあらゆるデバイスに合わせる-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheGodburger</title>
+    <!--htmlとcssのリンク付け-->
+    <link rel="stylesheet" href="./../static/css/style.css">
+    <link rel="stylesheet" href="./../static/css/style2.css">
+    <script language="javascript" type="text/javascript" src="./../static/hamburger.js"></script>
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+
+<!--body：表方-->
+<body>
+    <header class="header">
+        <h1 class="shopName">The Godburger</h1>
+        <nav class="headerNavigationUl">
+            <ul>
+                <li class="headerNavigationLi"><a href="#hamburger">Hamburger</a></li>
+                <li class="headerNavigationLi"><a href="#topping" onclick="">Topping</a></li>
+                <li class="headerNavigationLi"><a href="#drinkMenu" onclick="">Drink</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="image">
+            <!--画像の保存場所+写真の名前付け　-->
+            <img class="image" src="./../static/images/logo.jpg" alt="ロゴ">
+        </div>
+        <div class="shopDetail">
+            <p>All hamburgers with French fries tax included<p>
+            <p>These burgers are seasoned for the best flavor,</p>
+            <p>so please try a bite first without the ketchup and mustard</p>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <h1 class="titleFont1">&lt;Hamburger&gt;</h1>
+            <div class="menu">
+                <div class="foodMenu" id="foodMenu1">
+                    <div class="foodName" onclick="showDetail('Hamburger')">
+                        <p>Hamburger</p> 
+                        <p class="foodPrice">1400yen</p>
+                    </div>
+                    
+                    <div class="foodName" onclick="showDetail('Cheeseburger')">
+                        <p>Cheeseburger</p>
+                        <p class="foodPrice">1550yen</p>
+                    </div>
+
+                    <div class="foodName" onclick="showDetail('Bacon Cheeseburger')">
+                        <p>Bacon Cheeseburger<Bdo:r></Bdo:r>urger</p>
+                        <p class="foodPrice">1800yen</p>
+                    </div>
+
+                    <div class="foodName" onclick="showDetail('Avocado Cheeseburer')">
+                        <p>Avocado Cheeseburger</p>
+                        <p class="foodPrice">1750yen</p>
+                    </div>
+
+                    <div class="foodName" onclick="showDetail('Avocacdo Bacon Cheeseburger')">
+                        <p>Avocacdo Bacon Cheeseburger</p>
+                        <p class="foodPrice">2000yen</p>
+                    </div>
+
+                    <div class="foodName" onclick="showDetail('Avocado Friedeggburger')">
+                        <p>Avocado Friedeggburger</p>
+                        <p class="foodPrice">1700yen</p>
+                    </div>
+
+                    <div class="foodName" onclick="showDetail('Cheese Fridedeggburger')">
+                        <p>Cheese Fridedeggburger</p>
+                        <p class="foodPrice">1650yen</p>
+                    </div>
+
+                    <div class="foodName" onclick="showDetail('Double Patties Cheeseburger')">
+                        <p>Double Patties Cheeseburger</p>
+                        <p class="foodPrice">2250yen</p>
+                    </div>
+                </div>
+
+                <div class="foodMenu" id="foodMenu2">
+
+                    <div class="foodName" onclick="showDetail('B.B.Q.burger')">
+                        <p>B.B.Q.burger</p>
+                        <p class="foodPrice">1500yen</p>
+                        </div>
+
+                    <div class="foodName" onclick="showDetail('B.B.Q.Avocadoburger')">
+                        <p>B.B.Q.Avocadoburger</p>
+                        <p class="foodPrice">1700yen</p>
+                    </div>
+
+                    <div class="foodName" onclick="showDetail('B.B.Q.Avocado Friedeggburger')">
+                        <p>B.B.Q.Avocado Friedeggburger</p>
+                        <p class="foodPrice">1800yen</p>
+                    </div>
+
+                    <div class="foodName" onclick="showDetail('Mexicanburger')">
+                        <p>Mexicanburger</p>
+                        <p class="foodPrice">1750yen</p>
+                    </div>
+
+                    <div class="foodName" onclick="showDetail('Chili Beans Cheeseburger')">
+                        <p>Chili Beans Cheeseburger</p>
+                        <p class="foodPrice">1750yen</p>
+                    </div>
+
+                    <div class="foodName" onclick="showDetail('S.Mushburger')">
+                        <p>S.Mushburger</p>
+                        <p class="foodPrice">1750yen</p>
+                    </div>
+
+                    <div class="foodName" onclick="showDetail('Gorgonzolaburger')">
+                        <p>Goronzolaburger</p>
+                        <p class="foodPrice">1650yen</p>
+                    </div>
+
+                    <div class="foodName" onclick="showDetail('Vegetable Burger')">
+                        <p>Vegetable Burger</a>
+                        <p class="foodPrice">1300yen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--トッピング-->
+        <div class="toppingBox" id="topping">
+            <h2 class="titleFont1"> &lt;Topping&gt;</h2>
+            <div class="toppingDetail">
+                <div class="toppingName text10">
+                    <p>Avocado</p>
+                    <p>B.B.Q.Sauce</p>
+                    <p>Bacon</p>
+                    <p>Cheese</p>
+                    <p>Friedegg</p>
+                    <p>Gorgonzola</p>
+                    <p>Pattie</p>
+                </div>
+                <div class="toppingPrice text10">
+                    <p>200yen</p>
+                    <p>100yen</p>
+                    <p>250yen</p>
+                    <p>150yen</p>
+                    <p>100yen</p>
+                    <p>250yen</p>
+                    <p>700yen</p>
+                </div>
+            </div>
+        </div>
+
+        <!--ドリンク-->
+        <div class="drinkMenu" id="drinkMenu">
+            <h2 class="titleFont1">&lt;Drink&gt;</h2>
+            <h2 class="titleFont2">~Beer~</h2>
+            <div class="drinkDetail">
+                <div class="drinkname text10">
+                    <p>INEDIT (Spain)</p>
+                    <p>Heineken (Netherlands)</p>
+                    <p>BREWDOG Punk IPA (Scotland)</p>
+                    <p>NEWTON (Belgium)</p>
+                    <p>KIRIN HEART LAND (Japan)</p>
+                    <p>MINOH Pale Ale (Osaka-Japan)</p>
+                    <p>MINOH Osaru IPA (Osaka-Japan)</p>
+                    <p>Non-ALcohol Beer (Japan)</p>
+                </div>
+                <div class="drinkprice text10">
+                    <p>700yen</p>
+                    <p>600yen</p>
+                    <p>700yen</p>
+                    <p>700yen</P>
+                    <p>650yen</p>
+                    <p>800yen</p>
+                    <p>800yen</p>
+                    <p>500yen</P>
+                </div>
+            </div>
+        </div>
+        <div class="drinkMenu" id="drinkMenu2">
+            <h2 class="titleFont2">~Juice~</h2>
+            <div class="drinkDetail">
+                <div class="drinkname text10">
+                    <p>Sparkling water (330ml)</p>
+                    <p>Mineral water (330ml)</p>
+                    <p>Grapetiser</p>
+                    <p>Appletiser</p>
+                    <p>Coca Cola</p>
+                    <p>Ginger Ale</p>
+                    <p>Yoga (apricot / peach / pear)</p>
+                    <p>Tea Earl Grey(HOT)</p>
+                    <p>Tea Earl Grey(ICE)</p>
+                    <p>Americano(HOT)</p>
+                    <p>Americano(ICE)</p>
+                    <p>Espresso</p>
+                </div>
+                <div class="drinkprice text10">
+                    <p>400yen</P>
+                    <p>400yen</P>
+                    <p>450yen</P>  
+                    <p>450yen</P>
+                    <p>350yen</P>
+                    <p>350yen</P>
+                    <p>450yen</P>
+                    <!-- <p style="opacity: 0;"></p>
+                    <p style="opacity: 0;"></p> -->
+                    <p>400yen</P>
+                    <p>450yen</P>
+                    <p>400yen</P> 
+                    <p>450yen</P>
+                    <p>400yen</P>     
+                </div>
+            </div>
+        </div>
+
+        <div class="adress" id="adress">
+            <p>&#12306 920-0961<p>
+            <p>金沢市香林坊2-12-10 1-A</p>
+            <p>phone 076-205-2925</p>
+        </div>
+
+        <div class="selectLanguage buttonBox">
+          <p type="button" class="button" onclick="moveToOtherPage('indexJap')">Japanese</p>
+          <p type="button" class="button" onclick="moveToOtherPage('indexEng')">English</p>
+        </div>
+
+        <!-- ハンバーガー詳細 -->
+        <div id="hamburgerDetail">
+            <div id="hamburgerDetailBox">
+              <div class="hamburgerDetailName">
+                <h3 id="detailName"></h3>
+              </div>
+              <div id="hamburgerDetailImage">
+              </div>
+              <div class="hamburgerDetailText">
+                <p id="detailText"></p>
+              </div>
+              <div class="hamburgerDetailPrice">
+                <p id="detailPrice">
+              </div>
+              <div class="buttonBox">
+                <p class="button" onclick="hideDetail()">back</p>
+              </div>
+            </div>
+          </div>
+
+    </main>
+
+    <script src="hamburger.js"></script>
+</body>
+</html>
